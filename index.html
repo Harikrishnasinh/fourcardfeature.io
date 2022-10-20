@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Four card feature section</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,600;0,800;1,200;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    body {
+      background-color: hsl(0, 0%, 98%);
+    }
+
+    .container {
+      font-family: 'Poppins', sans-serif;
+      margin-bottom: 30px;
+    }
+
+    .top-text {
+      text-align: center;
+      font-size: 27px;
+      font-weight: 200;
+    }
+
+    .second-text {
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .third-text p {
+      font-size: 12px;
+      color: hsl(229, 6%, 66%);
+      font-weight: 400;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .card-1 {
+      /* background-color: beige; */
+      /* border: 1px solid black; */
+      border-top: 5px solid hsl(180, 62%, 55%);
+      display: inline-block;
+      background-color: white;
+      width: 24%;
+      padding: 0px 20px;
+      border-radius: 7px;
+      box-sizing: border-box;
+      box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    }
+
+    .details-container p {
+      font-size: 12px;
+      color: hsl(229, 6%, 66%);
+    }
+
+    .image-card-1 {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 20px;
+      /* padding: 0px 0px 10px 0px; */
+    }
+
+    .card-1:nth-child(2) {
+      border: none;
+      /* background-color: beige; */
+      border-top: 5px solid hsl(0, 78%, 62%);
+      /* background-color: black; */
+    }
+
+    .card-1:nth-child(3) {
+      border: none;
+      border-top: 5px solid hsl(212, 86%, 64%);
+    }
+
+    .card-1:nth-child(4) {
+      border: none;
+      border-top: 5px solid hsl(212, 86%, 64%);
+    }
+
+    .vertical {
+      box-sizing: border-box;
+      width: 24%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 30px;
+      /* margin: 20px; */
+    }
+
+    .vertical .card-1 {
+      width: 95%;
+    }
+
+    .vertical .card-1:nth-child(2) {
+      /* background-color: black; */
+      margin: 20px;
+      width: 112%;
+      border-top: 5px solid hsl(34, 97%, 64%);
+    }
+
+    .vertical .card-1:nth-child(1) {
+      /* background-color: black; */
+      border-top: 5px solid hsl(0, 78%, 62%);
+      min-width: 112%;
+      width: 112%;
+    }
+
+    @media only screen and (max-width: 1220px) {
+      .card-container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .vertical {
+        box-sizing: border-box;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px;
+        /* margin: 20px; */
+      }
+
+      .card-1 {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="main-card">
+      <div class="top">
+        <div class="top-text">
+          <p>
+            Reliable, efficient delivery <br>
+            <span class="second-text">
+              Powered by Technology
+            </span>
+          </p>
+          <div class="third-text">
+            <p>
+              Our Artificial Intelligence powered tools use millions of project data <br> points
+              to ensure that your project is successful
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card-1">
+          <div class="details-container">
+            <h3>
+              Supervisor
+            </h3>
+            <p>
+              Monitors activity to identify project roadblocks
+            </p>
+          </div>
+          <div class="image-card-1">
+            <img src="./images/icon-supervisor.svg" alt="image">
+          </div>
+        </div>
+        <!-- card - 2 -->
+        <div class="vertical">
+          <div class="card-1">
+            <div class="details-container">
+              <h3>
+                <!-- Supervisor -->
+                Team Builder
+              </h3>
+              <p>
+                <!-- Monitors activity to identify project roadblocks -->
+                Scans our talent network to create the optimal team for your project
+              </p>
+            </div>
+            <div class="image-card-1">
+              <img src="./images/icon-team-builder.svg" alt="image">
+            </div>
+          </div>
+          <!-- card-3 -->
+          <div class="card-1">
+            <div class="details-container">
+              <h3>
+                <!-- Supervisor -->
+                Karma
+              </h3>
+              <p>
+                Regularly evaluates our talent to ensure quality
+                <!-- Monitors activity to identify project roadblocks -->
+              </p>
+            </div>
+            <div class="image-card-1">
+              <img src="./images/icon-karma.svg" alt="image">
+            </div>
+          </div>
+        </div>
+        <!-- card-4 -->
+        <div class="card-1">
+          <div class="details-container">
+            <h3>
+              <!-- Supervisor -->
+              Calculator
+            </h3>
+            <p>
+              <!-- Monitors activity to identify project roadblocks -->
+              Uses data from past projects to provide better delivery estimates
+            </p>
+          </div>
+          <div class="image-card-1">
+            <img src="./images/icon-calculator.svg" alt="image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
